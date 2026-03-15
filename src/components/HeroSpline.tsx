@@ -8,19 +8,8 @@ export default function HeroSpline() {
   const [shouldLoadSpline, setShouldLoadSpline] = useState(false);
 
   useEffect(() => {
-    // Check if the device is mobile or low-end
-    const isMobile = window.innerWidth < 768;
-    // navigator.hardwareConcurrency gives the number of logical processors. 
-    // If it's undefined (some older browsers), we assume it's okay to load, 
-    // but typically <= 4 is considered lower end for heavy 3D WebGL scenes.
-    const hwConcurrency = navigator.hardwareConcurrency || 4; 
-    const isLowEnd = hwConcurrency <= 4; 
-
-    if (isMobile || isLowEnd) {
-      setShouldLoadSpline(false);
-    } else {
-      setShouldLoadSpline(true);
-    }
+    // We now load the Spline scene on all devices, including mobile.
+    setShouldLoadSpline(true);
   }, []);
 
   return (

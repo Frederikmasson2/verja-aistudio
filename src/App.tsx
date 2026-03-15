@@ -9,13 +9,13 @@ export default function App() {
     <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-[#050505] dark:text-[#e0e0e0] selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black font-sans transition-colors duration-500">
       
       {/* Navigation */}
-      <nav className="fixed top-0 w-full flex justify-between items-center p-6 lg:p-12 text-[10px] uppercase tracking-[0.2em] z-50 mix-blend-difference pointer-events-auto text-white">
-        <div className="flex gap-8 items-center">
-          <a href="#home" className="text-white font-bold text-sm tracking-[0.3em]">VERJA</a>
-          <a href="#platform" className="hover:text-white/80 transition-colors hidden sm:block ml-8">Platform</a>
-          <a href="#methodology" className="hover:text-white/80 transition-colors hidden sm:block">Methodology</a>
+      <nav className="fixed top-0 w-full flex justify-between items-center p-4 lg:p-12 text-[10px] uppercase tracking-[0.2em] z-50 mix-blend-difference pointer-events-auto text-white">
+        <div className="flex gap-4 lg:gap-8 items-center">
+          <a href="#home" className="text-white font-bold text-sm tracking-[0.3em] mr-2 lg:mr-8">VERJA</a>
+          <a href="#platform" className="hover:text-white/80 transition-colors">Platform</a>
+          <a href="#methodology" className="hover:text-white/80 transition-colors hidden sm:block pt-0">Methodology</a>
         </div>
-        <div className="flex gap-6 items-center">
+        <div className="flex gap-4 lg:gap-6 items-center">
           <ThemeToggle />
           <a href="#contact" className="border-b border-white/30 pb-1 hover:border-white transition-colors">Book Pentest</a>
         </div>
